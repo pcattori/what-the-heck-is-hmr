@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {},
+  "imports": {
+    "#*": "./*.cjs"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "dependencies": {
+    "boxen": "^5.1.2",
+    "picocolors": "^1.0.0"
+  },
+  "devDependencies": {
+    "chokidar": "^3.5.3",
+    "dedent": "^1.5.1",
+    "esbuild": "^0.19.5"
+  }
+}
