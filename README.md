@@ -4,7 +4,11 @@ Learn what Hot Module Replacement is and how it works by reinventing it from scr
 
 https://github.com/pcattori/what-the-heck-is-hmr/assets/1477317/acfdcdf9-3130-47d1-85bc-6669c57ba11c
 
-If you get stuck, you can peek at the [solutions](./solution).
+This tutorial focuses on the core concepts of HMR.
+So instead of wrestling with the browser and network, we'll keep everything in Node.
+To that end, we'll use a simple CLI app meant to mirror a typical web app.
+
+If you get stuck at any point, you can peek at the [solutions](./solution).
 
 ## 1 Play with the example app
 
@@ -35,15 +39,15 @@ Ok time to start reinventing HMR!
 Start by watching the app directory for changes with [chokidar](https://github.com/paulmillr/chokidar).
 Whenever file changes are detected, re-require the app.
 
-## 4 Trigger re-renders on changes
-
-We're re-requiring the app, but nothing is happening.
-When changes are detected, let's signal to the browser that it should re-render the app.
-
-## 5 Invalidate the whole app
+## 4 Invalidate the whole app
 
 `require` is caching all of the modules in our app, so we get the old app whenever we re-require it.
 When changes are detected, invalidate _all_ the modules from the app directory.
+
+## 5 Trigger re-renders on changes
+
+We're re-requiring the app, but nothing is happening.
+When changes are detected, let's signal to the browser that it should re-render the app.
 
 Nice! You've reinvented live reload!
 
