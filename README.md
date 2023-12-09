@@ -2,6 +2,8 @@
 
 Learn what Hot Module Replacement is and how it works by reinventing it from scratch!
 
+🎥 Watch my [talk at Remix Bay Area](https://www.youtube.com/watch?v=e5M_5jKPaL4) for a live demo of this tutorial!
+
 https://github.com/pcattori/what-the-heck-is-hmr/assets/1477317/acfdcdf9-3130-47d1-85bc-6669c57ba11c
 
 This tutorial focuses on the core concepts of HMR.
